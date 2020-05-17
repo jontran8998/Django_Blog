@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import  Post
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 def home(request):
   context = {
@@ -17,6 +17,10 @@ class PostListView(ListView):
 def about(request):
   return render(request, 'blog/about.html', {'title': 'About'})
 
+
+class PostDetailView(DetailView):
+  model = Post  
+  
 
 
 
