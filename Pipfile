@@ -11,6 +11,8 @@ django-crispy-forms = "*"
 boto3 = "*"
 django-storages = "*"
 pillow = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.8"
+ 
